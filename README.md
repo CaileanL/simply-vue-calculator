@@ -1,4 +1,4 @@
-# Vue-EasyCalculator
+# Vue-Easy Calculator
 A Simple Calculator.
 一个简单的计算器。
 
