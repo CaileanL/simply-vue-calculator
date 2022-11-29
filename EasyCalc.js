@@ -5,8 +5,6 @@ new Vue({
         param2: 0,
         isParam1: true,
         option: "",
-        // pointMode: false,
-        // pointLevel: 0,
         addPoint: false,
     },
     methods: {
@@ -112,6 +110,41 @@ new Vue({
                 ) {
                     this.del();
                 } else if (this.param2 == "") this.param2 = 0;
+            }
+        }, extraOpreation(opreation) {
+            this.param1 = parseFloat(this.param1);
+            this.param2 = parseFloat(this.param2);
+            switch (opreation) {
+                case "square":
+                    this.square();
+                    break;
+                case "reciprocal":
+                    this.reciprocal();
+                    break;
+                case "squareRoot":
+                    this.squareRoot();
+                    break;
+            }
+        },
+        square() {
+            if (this.isParam1) {
+                this.param1 = this.param1 * this.param1;
+            } else {
+                this.param2 = this.param2 * this.param2;
+            }
+        },
+        reciprocal() {
+            if (this.isParam1) {
+                this.param1 = 1 / this.param1;
+            } else {
+                this.param2 = 1 / this.param2;
+            }
+        },
+        squareRoot() {
+            if (this.isParam1) {
+                this.param1 = Math.sqrt(this.param1);
+            } else {
+                this.param2 = Math.sqrt(this.param2);
             }
         },
         div100() {
