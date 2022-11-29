@@ -11,3 +11,4 @@ This Calculator uses Vue.
 3. 简单的解决了计算的精度丢失问题（Fixed the problem of loss of precision.）
 4. 可以连续按 = 来连续计算（You can keep pressing the = to calculate result.）
 
+但是计算的结果可能会超出框的大小。
