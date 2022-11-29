@@ -124,13 +124,16 @@ new Vue({
                 case "squareRoot":
                     this.squareRoot();
                     break;
+                case "div100":
+                    this.div100();
+                    break;
             }
         },
         square() {
             if (this.isParam1) {
-                this.param1 = this.param1 * this.param1;
+                this.param1 *= this.param1;
             } else {
-                this.param2 = this.param2 * this.param2;
+                this.param2 *= this.param2;
             }
         },
         reciprocal() {
@@ -148,8 +151,12 @@ new Vue({
             }
         },
         div100() {
-            if (this.isParam1) this.param1 /= 100;
-            else this.param2 /= 100;
+            if (this.isParam1) {
+                this.param1 /= 100;
+            }
+            else {
+                this.param2 /= 100;
+            }
         },
         afterPoint(num) {
             var x = String(num).indexOf(".") + 1; //小数点的位置
