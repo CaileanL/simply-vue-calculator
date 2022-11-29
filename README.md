@@ -3,6 +3,7 @@ A Simple Calculator.
 一个简单的计算器。
 
 This Calculator uses Vue.
+
 使用了vue来制作。
 但只是用vue来简化制作计算器的过程，意义上不算是一个vue的项目。当然其实也可以变成那种样子。
 但是毕竟是简单计算器，就不弄那么复杂了
