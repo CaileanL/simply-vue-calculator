@@ -5,11 +5,6 @@ A Simple Calculator.
 This Calculator uses Vue.
 
 使用了vue来制作。
-但**只是用vue来简化**制作计算器的过程，意义上不算是一个vue的项目。
-
-当然其实也可以变成那种样子。
-~毕竟是简单计算器，就不弄那么复杂了~
-
 
 ## 大致功能(Features)：
 1. 有小数点（Decimal point.）
